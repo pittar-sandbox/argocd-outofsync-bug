@@ -8,6 +8,6 @@ rules:
   - apiGroups:
     - argoproj.io
     resources:
-      - argocd
+      - argocds
     verbs:
       - '*'
