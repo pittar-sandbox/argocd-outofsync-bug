@@ -6,8 +6,8 @@ metadata:
   name: openshift-gitops-argocd-extended-clusterrole
 rules:
   - apiGroups:
-    - apiextensions.k8s.io
+    - argoproj.io
     resources:
-      - customresourcedefinitions
+      - argocd
     verbs:
       - '*'

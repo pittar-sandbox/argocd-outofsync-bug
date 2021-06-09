@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: argocd-outofsync
   source:
-    path: overlays/03-argocd
+    path: overlays/03-argocd-instance
     repoURL: https://github.com/pittar-sandbox/argocd-outofsync-bug.git
     targetRevision: main
   syncPolicy:
