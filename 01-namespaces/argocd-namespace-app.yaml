@@ -2,7 +2,7 @@
 kind: Application
 apiVersion: argoproj.io/v1alpha1
 metadata:
-  name: argocd-instance
+  name: argocd-namespace
   labels:
     group: argocd-outofsync
 spec:
@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: argocd-outofsync
   source:
-    path: overlays/03-argocd
+    path: overlays/02-argocd-namespace
     repoURL: https://github.com/pittar-sandbox/argocd-outofsync-bug.git
     targetRevision: main
   syncPolicy:

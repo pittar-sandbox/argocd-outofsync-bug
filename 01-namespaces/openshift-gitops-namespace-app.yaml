@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: argocd-outofsync
   source:
-    path: overlays/01-namespace
+    path: overlays/01-openshift-gitops-namespace
     repoURL: https://github.com/pittar-sandbox/argocd-outofsync-bug.git
     targetRevision: main
   syncPolicy:
